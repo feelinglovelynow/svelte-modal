@@ -16,7 +16,9 @@
     document.body.classList.add('fln__modal-is-visible')
     document.body.style.overflow = 'hidden'
     document.addEventListener('keyup', onKeyup)
-    isModalVisible = true
+    setTimeout(() => {
+      isModalVisible = true
+    }, 150)
   }) satisfies ShowModal
 
 
